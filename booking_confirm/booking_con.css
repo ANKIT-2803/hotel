@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+padding: 0;
+}
+body{
+
+display: flex;
+justify-content: center;
+background-image: url(bg-img.png);
+
+}
+.hero{
+    height: 400px;
+    width: 700px;
+    
+   
+    background-color:#003366;
+    
+   border-style: dashed none dashed;
+    border-color: white;
+    border-width: 2x;
+    margin-top: 100px;
+    transition: 0.4s ease;
+    cursor: pointer;
+  
+ 
+}
+.hero:hover{
+    transform: scale(1.1);
+}
+.hero h3{
+    color:white;
+    font-size: 35px;
+    padding-left: 160px;
+    padding-top: 20px;
+    text-decoration: underline;
+
+
+}
+.hero p{
+    color: wheat;
+    font-size: 20px;
+   padding-top: 50px;
+   padding-left: 30px;
+
+}
+.hero button{
+    height: 35px;
+    width: 100px;
+    margin-left: px;
+    margin-top: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+    
+}
+.btn_pri{
+    margin-left: 200px;
+}
+.btn_sec{
+    margin-left: 60px;
+}
+.hero button:hover{
+    background-color: orange;
+    transform: scale(1.2);
+
+}
+.hero a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}

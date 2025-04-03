@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Booking</title>
+        <link rel="stylesheet" href="/hotel/demo_pages/css/booking.css">
+        <!-- Ionicons CSS -->
+        <link rel="shortcut icon" href="/hotel/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><img src="/hotel/logo.png" alt></div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="bookNow">
+                    <ion-icon name="book"></ion-icon> Book Now
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section id="booking-form" class="container">
+                <h2>Book Your Stay</h2>
+                <form id="reservationForm" action method="post">
+                    <div class="form-group">
+                        <label for="checkinDate">Check-In Date <ion-icon
+                                name="calendar"></ion-icon></label>
+                        <input type="date" id="checkinDate" name="checkinDate"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkoutDate">Check-Out Date <ion-icon
+                                name="calendar"></ion-icon></label>
+                        <input type="date" id="checkoutDate" name="checkoutDate"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Number of Guests <ion-icon
+                                name="people"></ion-icon></label>
+                        <input type="number" id="guests" name="guests" min="1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="roomType">Room Type <ion-icon
+                                name="bed"></ion-icon></label>
+                        <select id="roomType" name="roomType">
+                            <option value hidden selected></option>
+                            <option value="single">Delux</option>
+                            <option value="double">Premium rooms wirh
+                                sitout</option>
+                            <option value="suite">Family room valley
+                                view</option>
+                            <option value="suite">Premium room valley
+                                view</option>
+                            <option value="suite">Seleqtions Pawcations room</option>
+                           
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests
+                            (Optional)</label>
+                        <textarea id="specialRequests" name="specialRequests"
+                            rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <ion-icon name="search"></ion-icon> Book Now
+                    </button>
+                </form>
+            </section>
+
+            <section id="search-results" class="container">
+                <h2>Available Rooms</h2>
+                <div class="room-list">
+                    <div class="room-item">
+                        <u style="color: #004080;"><h3>Delux Room</h3></u>
+                        <p class="price">₹5000 per night</p>
+                        <p class="amenities">1 king Bed, Free Wi-Fi, 27 x 30
+                            sqm, upto 3 guests</p>
+                        <button class="btn-secondary">Select Room</button>
+                    </div>
+
+                    <div class="room-item">
+                        <u style="color: #004080;"><h3>Premium room with sit
+                                out</h3></u>
+                        <p class="price">₹8500 per night</p>
+                        <p class="amenities">2 king Beds, Free Wi-Fi, Breakfast
+                            Included, lake View</p>
+                        <button class="btn-secondary">Select Room</button>
+                    </div>
+
+                    <div class="room-item">
+                        <u style="color: #004080;"><h3>Family room valley
+                                view</h3></u>
+                        <p class="price">₹10000 per night</p>
+                        <p class="amenities">Twin beds, Free Wi-Fi, Breakfast
+                            Included, Living Area, valley View + lake view</p>
+                        <button class="btn-secondary">Select Room</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="booking-details" class="container">
+                <h2>Booking Details</h2>
+                <!-- Booking details will be dynamically inserted here -->
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>Contact us: Hotel greeen palace, Nainital, India| <ion-icon
+                        name="call"></ion-icon> +91 944454455 |
+                    hotelgreenpalace@gmail
+
+                    .com</p>
+                <div class="social-media">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+                <a href="#privacy-policy">Privacy Policy</a> | <a
+                    href="#terms-of-service">Terms of Service</a>
+            </div>
+        </footer>
+    </body>
+</html>
